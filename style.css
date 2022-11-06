@@ -205,7 +205,7 @@ body {
 }
 
 #page-1 p {
-  transform: translateX(-1600px);
+  transform: translateX(-2000px);
   animation: paragraph var(--animate-speed) forwards ease-in 1s;
 }
 
