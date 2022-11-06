@@ -1,93 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- CSS Style Sheet -->
-  <link rel="stylesheet" href="style.css">
-  <title>Presentation</title>
-</head>
-<body>
-  <!-- Page 1 (Intro) -->
-  <section id="page-1" class="page">
-    <h1>Welcome To My Presentation</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsa consequatur assumenda nisi at reprehenderit ut veniam, nemo molestias repellat praesentium placeat odio distinctio omnis. Animi alias dignissimos, excepturi dolores tempora id libero odit explicabo rem voluptatibus officia, quas ut.</p>
-    <div>
-      <a href="#page-2" class="btn">
-        Next Page <i class="fas fa-arrow-circle-down"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Page 2 -->
-  <section id="page-2" class="page">
-    <h1>Page 2</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsa consequatur assumenda nisi at reprehenderit ut veniam, nemo molestias repellat praesentium placeat odio distinctio omnis. Animi alias dignissimos, excepturi dolores tempora id libero odit explicabo rem voluptatibus officia, quas ut.</p>
-    <div>
-      <a href="#page-1" class="btn btn-dark">
-        Prev Page <i class="fas fa-arrow-circle-up"></i>
-      </a>
-      <a href="#page-3" class="btn">
-        Next Page <i class="fas fa-arrow-circle-down"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Page 3 -->
-  <section id="page-3" class="page">
-    <h1>Page 3</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsa consequatur assumenda nisi at reprehenderit ut veniam, nemo molestias repellat praesentium placeat odio distinctio omnis. Animi alias dignissimos, excepturi dolores tempora id libero odit explicabo rem voluptatibus officia, quas ut.</p>
-    <div>
-      <a href="#page-2" class="btn btn-dark">
-        Prev Page <i class="fas fa-arrow-circle-up"></i>
-      </a>
-      <a href="#page-4" class="btn">
-        Next Page <i class="fas fa-arrow-circle-down"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Page 4 -->
-  <section id="page-4" class="page">
-    <h1>Page 4</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsa consequatur assumenda nisi at reprehenderit ut veniam, nemo molestias repellat praesentium placeat odio distinctio omnis. Animi alias dignissimos, excepturi dolores tempora id libero odit explicabo rem voluptatibus officia, quas ut.</p>
-    <div>
-      <a href="#page-3" class="btn btn-dark">
-        Prev Page <i class="fas fa-arrow-circle-up"></i>
-      </a>
-      <a href="#page-5" class="btn">
-        Next Page <i class="fas fa-arrow-circle-down"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Page 5 -->
-  <section id="page-5" class="page">
-    <h1>Page 5</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsa consequatur assumenda nisi at reprehenderit ut veniam, nemo molestias repellat praesentium placeat odio distinctio omnis. Animi alias dignissimos, excepturi dolores tempora id libero odit explicabo rem voluptatibus officia, quas ut.</p>
-    <div>
-      <a href="#page-4" class="btn">
-        Prev Page <i class="fas fa-arrow-circle-up"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css"
+      integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Presentation</title>
+  </head>
+  <body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page">
+      <h1>"4 Facts All 'True' Sailor Moon Fans Should Know"</h1>
+      <p>Hey Sailor Scout! Here are 4 little known facts about Salior Moon.</p>
+      <div class="btn-group">
+        <a href="#page-2" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Page 2 -->
+    <section id="page-2" class="page">
+      <h1>#1</h1>
 
-  <script>
-    //Smooth Scrolling
-    $('.btn').on('click', function(event){
-      if (this.hash !== '') {
-        event.preventDefault();
-        const hash = this.hash;
-        $('html, body').animate(
-          {
-            scrollTop: $(hash).offset().top
-          },
-          800
-        );
-      }
-    });
-  </script>
+      <div class="picture-box">
+        <img
+          src="https://media.giphy.com/media/X40zUKTGZgp7q/giphy.gif"
+          alt=""
+        />
+      </div>
 
-</body>
+      <p>Sailor Moon was also inspired by the <em>Power Rangers</em>.</p>
+      <div class="btn-group">
+        <a href="#page-1" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-3" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Page 3 -->
+    <section id="page-3" class="page">
+      <h1>#2</h1>
+      <div class="picture-box">
+        <img
+          src="https://media.giphy.com/media/JSf51ChnoltKM/giphy.gif"
+          alt=""
+        />
+      </div>
+      <p>
+        In the original manga, Sailor Venus was cursed to never find the love of
+        her life.
+      </p>
+      <div class="btn-group">
+        <a href="#page-2" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-4" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Page 4 -->
+    <section id="page-4" class="page">
+      <h1>#3</h1>
+      <div class="picture-box">
+        <img
+          src="https://media.giphy.com/media/RG4IXFG1YmLOU/giphy.gif"
+          alt=""
+        />
+      </div>
+      <p>
+        Disney once planned to buy the rights to Sailor Moon to make a feature
+        film.<br /><br />
+        However, the series author disapproved - and the plan was discarded.
+      </p>
+      <div class="btn-group">
+        <a href="#page-3" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-5" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Page 5 -->
+    <section id="page-5" class="page">
+      <h1>#4</h1>
+      <div class="picture-box">
+        <img src="sailormoon_pink.webp" alt="" />
+      </div>
+      <p>
+        Sailor Moon was supposed to have pink or silver hair after her
+        transformation.<br />
+        <br />
+        The creator changed it to its iconic color after an editor recommended
+        blond hair because it stands out better on manga covers.
+      </p>
+      <div class="btn-group">
+        <a href="#page-4" class="btn">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+
+    </section>
+    <!-- Coded with 💛 by Christopher Rimes |Info was taken from BuzzFeed and credit goes to Buzzfeed and it's associates. Original article writted by Anna Aridzanjan. -->
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //Smooth Scrolling
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
 </html>
