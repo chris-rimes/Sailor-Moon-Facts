@@ -45,7 +45,7 @@ body {
 
 
 .picture-box {
-  width: 30vh;
+  width: 30vw;
   border-radius: 6px;
   margin-bottom: 0.25rem;
   overflow: hidden;
@@ -197,6 +197,8 @@ body {
   background-color: var(--page-4-color);
   color: var(--page-1-color);
 }
+
+#page-5 img
 
 /* Page Animation */
 #page-1 h1 {
